@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='Assets/favicon.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ url_for('static',filename='functions/scripts.js') }}"> </script>
+</head>
+
+<body>
+  <div id="centered">
+    <h1>TIC-TAC-TOE</h1>
+    <h4>GET THREE IN A ROW TO BEAT OUR AI</h4>
+    <div id="divider1"></div>
+    <div id="reset">Reset</div>
+    <div id="cfResult" class=""></div>
+    <div id="divider2"></div>
+    <ul id="gridContainer">
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+      <li id="Cell" class="none"></li>
+    </ul>
+    <div id="coinflip">
+      <div id="chooseflip">Choose Head or Tails</div>
+      <div id="chooseflip_descript">~ Winner makes first move ~</div>
+      <div id="head" value="1">Head</div>
+      <div id="tails" value="0">Tails</div>
+    </div>
+  </div>
+</body>
+
+</html>

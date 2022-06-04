@@ -1,0 +1,223 @@
+/* Reset Styles across all browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/* StyleSheet */
+body {
+  	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  	font-weight: 700;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 3px;
+	padding-bottom: 5px;
+	color: rgb(31, 54, 83);
+}
+h4 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 12px;
+	width: 100%;
+	background-color: rgb(31, 54, 83);
+	color:  #f7f7f7;
+	vertical-align: middle;
+	padding: 5px 20px;
+	margin-left: -20px;
+	letter-spacing: 0.25px;
+}
+
+#divider1 {
+	padding-bottom: 20px;	
+}
+#divider2 {
+	padding-bottom: 10px;
+}
+
+#reset {
+	background-color: rgb(84, 148, 84);
+	color: #f7f7f7;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);	
+	padding: 2px 6px;
+	border-radius: 4px;
+	border-color: none;
+	outline: none;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	display: inline;
+	&:hover {
+		background-color: rgb(122, 167, 122);
+	}
+	&:active {
+		background-color: rgb(84, 148, 84);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 -2px -5px 0 rgba(0, 0, 0, 0.1);	
+	}
+}
+
+#cfResult.win {
+	display: inline;
+	font-size: 16px;
+	font-weight: 500;
+	color: #549454;
+	padding-left: 10px;
+  }
+  
+  #cfResult.lose {
+	display: inline;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(197, 73, 52);
+	padding-left: 10px;
+  }
+
+#centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(223, 232, 236);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-radius: 6px;
+}
+
+#gridContainer {
+	display: grid;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-columns: 100px 100px 100px;
+}
+
+#Cell {
+	background:#f7f7f7;
+	border: 2px solid rgb(31, 54, 83);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&:hover {
+		background-color:  #ece0e0;
+	}
+	&:active {
+		background-color: rgb(228, 158, 145);
+	}
+}
+
+
+#coinflip {
+	position: absolute;
+	left: 20px;
+	top: 145px;
+	height: 300px;
+	width: 300px;
+	background-color: #1f3653;
+	box-shadow: 0 4px 8px 0 rgba(0, 0.3, 0, 0.3), 0 5px 10px 0 rgba(0, 0.3, 0, 0.3);	
+}
+
+#chooseflip {
+	position: relative;
+	color: #f7f7f7;
+	left: 50px;
+	top: 15%;
+	font-size: 20px;
+	font-weight: 600;
+	}
+
+	#chooseflip_descript {
+	position: relative;
+	color: rgb(84, 148, 84);
+	left: 70px;
+	top: 20%;
+	font-size: 12px;
+	}
+
+	#head {
+	position: absolute;
+	left: 30px;
+	top: 150px;
+	width: 80px;
+	height: 80px;
+	background-color: #f7f7f7;
+	color: #1f3653;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.3);	
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 75px;
+	cursor: pointer;
+	&:hover {
+		background-color:  rgb(122, 167, 122);
+		color: #f7f7f7;
+	}
+	&:active {
+		background-color:  rgb(84, 148, 84);
+	}
+}
+
+#tails {
+	position: absolute;
+	left: 180px;
+	top: 150px;
+	width: 80px;
+	height: 80px;
+	background-color: #f7f7f7;
+	color: #1f3653;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 2px 5px 0 rgba(0, 0, 0, 0.3);	
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 75px;
+	cursor: pointer;
+	&:hover {
+		background-color:  rgb(122, 167, 122);
+		color: #f7f7f7;
+	}
+	&:active {
+		background-color:  rgb(84, 148, 84);
+	}
+}
+
+.x {
+	display: flex;
+	align-content: center;
+	color: tomato;
+	font-size: 80px;
+	font-weight: 600;
+	padding-bottom: 25px;
+}
+.o {
+	color: rgb(31, 54, 83);
+	font-size: 90px;
+	font-weight: 500;
+	vertical-align: top;
+	text-anchor: start;
+	padding-bottom: 25px;
+}
